@@ -88,7 +88,7 @@ void asset_manager_t::add_asset_async(
             asset_loader->asset_path_loading.insert(asset_path);
             asset_loader->mutex_asset_path_loading.unlock();
 
-            async_fetch__create_async(
+            get_async(
                 m_server_scheme, m_server_host_name, m_server_port, asset_path,
                 [asset_data_type, asset_loader, on_success, on_failure](const unsigned char* serialized_data, size_t serialized_data_size) {
                     asset_loader->mutex_asset_path_loading.lock();

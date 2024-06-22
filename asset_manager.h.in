@@ -1,5 +1,8 @@
-#ifndef ASSET_MANAGER_H
-# define ASSET_MANAGER_H
+#ifndef GIL_ASSET_MANAGER_H
+# define GIL_ASSET_MANAGER_H
+
+# define GIL_ASSET_MANAGER_VERSION_MAJOR @gil_asset_manager_VERSION_MAJOR@
+# define GIL_ASSET_MANAGER_VERSION_MINOR @gil_asset_manager_VERSION_MINOR@
 
 # include <unordered_map>
 # include <unordered_set>
@@ -55,4 +58,4 @@ struct asset_manager_t {
 
 # include "asset_manager.tpp"
 
-#endif // ASSET_MANAGER_H
+#endif // GIL_ASSET_MANAGER_H

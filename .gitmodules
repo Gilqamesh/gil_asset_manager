@@ -1,0 +1,3 @@
+[submodule "gil_web"]
+	path = gil_web
+	url = https://github.com/Gilqamesh/gil_web.git
