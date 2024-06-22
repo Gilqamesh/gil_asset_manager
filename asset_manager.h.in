@@ -31,8 +31,11 @@ struct asset_loader_t : asset_loader_base_t {
 };
 
 struct asset_manager_t {
+    asset_manager_t() = default;
     asset_manager_t(const std::string& server_scheme, const std::string& server_host_name, size_t server_port);
     ~asset_manager_t();
+
+    void init(const std::string& server_scheme, const std::string& server_host_name, size_t server_port);
 
     std::string m_server_scheme;
     std::string m_server_host_name;
