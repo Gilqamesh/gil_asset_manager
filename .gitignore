@@ -1,0 +1,5 @@
+*.a
+server
+client
+*.o
+*.d
